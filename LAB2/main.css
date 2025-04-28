@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  
+  .form-box {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: white;
+    text-align: left;
+  }
+  
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  input[type=date],
+  input[type=number],
+  select {
+    width: 95%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+  }
+  
+  .signup-btn,
+  .login-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup-btn:hover,
+  .login-btn:hover,
+  .cancel-btn:hover {
+    opacity: 0.8;
+  }
+  
+  a {
+    color: blue;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
