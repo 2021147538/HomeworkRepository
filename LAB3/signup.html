@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>회원가입 - 인프밍 영화 정보 사이트</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">인프밍 영화 정보 사이트입니다.</h1>
+    <nav class="site-nav">
+      <a href="index.html">메인페이지</a>
+      <a href="login.html">로그인</a>
+      <a href="signup.html">회원가입</a>
+    </nav>
+  </header>
+
+  <main class="auth-container">
+    <form action="signup_action.php" method="post">
+        <div class="form-box">
+            이름 : <input type="text" placeholder="이름 입력" required><br>
+            생일 : <input type="date" autocomplete="bday"><br>
+            성별 : <br>
+            남성<input type="radio" name="gender" value="male" required>
+            여성<input type="radio" name="gender" value="female"><br>
+            학년 : <input type="number" min="1" max="4" step="1"><br>
+            아이디 : <input type="text" placeholder="아이디 입력" autofocus><br>
+            비밀번호 : <input type="password" placeholder="비밀번호 입력" required><br>
+            이메일 : <input type="email" placeholder="이메일 입력" required><br>
+            보안 질문 :
+            <select required>
+              <option value="">질문을 선택하세요</option>
+              <option>나의 출신 초등학교는?</option>
+              <option>어머니의 성함은?</option>
+            </select><br>
+            답변 : <input type="text" placeholder="답변 입력" required><br>
+      
+            <button type="submit" class="signup-btn">Signup</button>
+            <button type="reset" class="cancel-btn">Cancel</button>
+          </div>
+    </form>
+  </main>
+</body>
+</html>
