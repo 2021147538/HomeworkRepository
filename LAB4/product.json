@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "Interstellar",
+    "release_date": "2014-11-07",
+    "vote_average": 8.1,
+    "overview": "Interstellar chronicles the adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+    "poster_url": "images/interstellar.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Scarface",
+    "release_date": "1983-12-08",
+    "vote_average": 8.0,
+    "overview": "After getting a green card in exchange for assassinating a Cuban government official, Tony Montana stakes a claim on the drug trade in Miami. Viciously murdering anyone who stands in his way, Tony eventually becomes the biggest drug lord in the state, controlling nearly all the cocaine that comes through Miami. But increased pressure from the police, wars with Colombian drug cartels and his own drug-fueled paranoia serve to fuel the flames of his eventual downfall.",
+    "poster_url": "images/scarface.jpg"
+  },
+  {
+    "id": 3,
+    "title": "The Shawshank Redemption",
+    "release_date": "1994-09-23",
+    "vote_average": 8.5,
+    "overview": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+    "poster_url": "images/shawshank.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Top Gun",
+    "release_date": "1986-05-16",
+    "vote_average": 6.7,
+    "overview": "For Lieutenant Pete 'Maverick' Mitchell and his friend and Co-Pilot Nick 'Goose' Bradshaw being accepted into an elite training school for fighter pilots is a dream come true.  A tragedy, as well as personal demons, threaten Pete's dreams of becoming an Ace pilot.",
+    "poster_url": "images/top_gun.jpg"
+  },
+  {
+    "id": 5,
+    "title": "The Godfather",
+    "release_date": "1972-03-14",
+    "vote_average": 8.5,
+    "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+    "poster_url": "images/the_godfather.jpg"
+  },
+  {
+    "id": 6,
+    "title": "The Godfather: Part II",
+    "release_date": "1974-12-20",
+    "vote_average": 8.3,
+    "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+    "poster_url": "images/the_godfather_part2.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Batman Begins",
+    "release_date": "2005-06-10",
+    "vote_average": 7.5,
+    "overview": "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
+    "poster_url": "images/batman_begins.jpg"
+  },
+  {
+    "id": 8,
+    "title": "The Dark Knight Rises",
+    "release_date": "2012-07-16",
+    "vote_average": 7.6,
+    "overview": "Following the death of District Attorney Harvey Dent, Batman assumes responsibility for Dent's crimes to protect the late attorney's reputation and is subsequently hunted by the Gotham City Police Department. Eight years later, Batman encounters the mysterious Selina Kyle and the villainous Bane, a new terrorist leader who overwhelms Gotham's finest. The Dark Knight resurfaces to protect a city that has branded him an enemy.",
+    "poster_url": "images/dark_knight_rises.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Dark Knight",
+    "release_date": "2008-07-16",
+    "vote_average": 8.3,
+    "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+    "poster_url": "images/dark_knight.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Pulp Fiction",
+    "release_date": "1994-09-10",
+    "vote_average": 8.3,
+    "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+    "poster_url": "images/pulp_fiction.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Forrest Gump",
+    "release_date": "1994-07-06",
+    "vote_average": 8.2,
+    "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events - in each case, far exceeding what anyone imagined he could do. Yet, despite all the things he has attained, his one true love eludes him. 'Forrest Gump' is the story of a man who rose above his challenges, and who proved that determination, courage, and love are more important than ability.",
+    "poster_url": "images/forrest_gump.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Star Wars",
+    "release_date": "1977-05-25",
+    "vote_average": 8.1,
+    "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+    "poster_url": "images/star_wars.jpg"
+  },
+  {
+    "id": 13,
+    "title": "The Big Short",
+    "release_date": "2015-12-11",
+    "vote_average": 7.3,
+    "overview": "The men who made millions from a global economic meltdown.",
+    "poster_url": "images/big_short.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Django Unchained",
+    "release_date": "2012-12-25",
+    "vote_average": 7.8,
+    "overview": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+    "poster_url": "images/django.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Gladiator",
+    "release_date": "2000-05-01",
+    "vote_average": 7.9,
+    "overview": "In the year 180, the death of emperor Marcus Aurelius throws the Roman Empire into chaos. Maximus is one of the Roman army's most capable and trusted generals and a key advisor to the emperor. As Marcus' devious son Commodus ascends to the throne, Maximus is set to be executed. He escapes, but is captured by slave traders. Renamed Spaniard and forced to become a gladiator, Maximus must battle to the death with other men for the amusement of paying audiences. His battle skills serve him well, and he becomes one of the most famous and admired men to fight in the Colosseum. Determined to avenge himself against the man who took away his freedom and laid waste to his family, Maximus believes that he can use his fame and skill in the ring to avenge the loss of his family and former glory. As the gladiator begins to challenge his rule, Commodus decides to put his own fighting mettle to the test by squaring off with Maximus in a battle to the death.",
+    "poster_url": "images/gladiator.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Return of the Jedi",
+    "release_date": "1983-05-23",
+    "vote_average": 7.9,
+    "overview": "As Rebel leaders map their strategy for an all-out attack on the Emperor's newer, bigger Death Star. Han Solo remains frozen in the cavernous desert fortress of Jabba the Hutt, the most loathsome outlaw in the universe, who is also keeping Princess Leia as a slave girl. Now a master of the Force, Luke Skywalker rescues his friends, but he cannot become a true Jedi Knight until he wages his own crucial battle against Darth Vader, who has sworn to win Luke over to the dark side of the Force.",
+    "poster_url": "images/return_of_the_jedi.jpg"
+  },
+  {
+    "id": 17,
+    "title": "The Great Gatsby",
+    "release_date": "2013-05-10",
+    "vote_average": 7.3,
+    "overview": "An adaptation of F. Scott Fitzgerald's Long Island-set novel, where Midwesterner Nick Carraway is lured into the lavish world of his neighbor, Jay Gatsby. Soon enough, however, Carraway will see through the cracks of Gatsby's nouveau riche existence, where obsession, madness, and tragedy await.",
+    "poster_url": "images/gatsby.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Scent of a Woman",
+    "release_date": "1992-12-23",
+    "vote_average": 8.6,
+    "overview": "Charlie Simms (Chris O'Donnell) is a student at a private preparatory school who comes from a poor family. To earn the money for his flight home to Gresham, Oregon for Christmas, Charlie takes a job over Thanksgiving looking after retired U.S. Army officer Lieutenant Colonel Frank Slade (Al Pacino), a cantankerous middle-aged man who lives with his niece and her family.",
+    "poster_url": "images/scent_of_a_woman.jpg"
+  },
+  {
+    "id": 19,
+    "title": "The Empire Strikes Back",
+    "release_date": "1980-05-17",
+    "vote_average": 8.2,
+    "overview": "The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.",
+    "poster_url": "images/empire_strikes.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Dead Poets Society",
+    "release_date": "1989-06-02",
+    "vote_average": 8.1,
+    "overview": "At an elite, old-fashioned boarding school in New England, a passionate English teacher inspires his students to rebel against convention and seize the potential of every day, courting the disdain of the stern headmaster.",
+    "poster_url": "images/dead_poets_society.jpg"
+  }
+]

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>인프밍 영화 정보 사이트</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">인프밍 영화 정보 사이트입니다.</h1>
+    <nav class="site-nav">
+      <a href="index.html">메인페이지</a>
+      <a href="login.html">로그인</a>
+      <a href="signup.html">회원가입</a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <div class="search-bar">
+      <input id="searchInput" type="text" placeholder="키워드를 입력하세요.">
+      <button id="searchBtn">Filter results</button>
+    </div>
+
+    <aside class="sort-panel">
+      <h2>정렬 기준</h2>
+      <label><input type="radio" name="sort" value="vote_desc"> 평점 내림차순</label>
+      <label><input type="radio" name="sort" value="vote_asc"> 평점 오름차순</label>
+      <label><input type="radio" name="sort" value="date_desc"> 개봉 내림차순</label>
+      <label><input type="radio" name="sort" value="date_asc"> 개봉 오름차순</label>
+    </aside>
+
+    <section id="movieList" class="movie-grid"></section>
+
+    <section class="about-section">
+      <h2>About</h2>
+      <p>
+        여기는 인프밍 영화 정보 사이트입니다! 최신 영화 포스터와 간단한 정보를 확인해 보세요.<br/>
+        로그인 후에 더 많은 기능을 이용할 수 있습니다.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    let allMovies = [], currentList = [], offset = 0;
+    const BATCH = 5;
+
+    async function init() {
+      allMovies = await (await fetch('product.json')).json();
+      currentList = [...allMovies];
+      renderNext();
+      setupSearch();
+      setupSort();
+      setupInfinite();
+    }
+
+    function renderNext() {
+      const slice = currentList.slice(offset, offset + BATCH);
+      slice.forEach(m => {
+        const card = document.createElement('div');
+        card.className = 'movie-card';
+        card.innerHTML = `
+          <img src="${m.poster_url}" alt="${m.title}">
+          <div class="overlay"><p>${m.overview}</p></div>
+          <div class="info">
+            <h3>${m.title}</h3>
+            <small>${m.release_date}</small>
+            <span>★ ${m.vote_average.toFixed(1)}</span>
+          </div>`;
+        document.getElementById('movieList').append(card);
+      });
+      offset += slice.length;
+    }
+
+    function setupInfinite() {
+      window.addEventListener('scroll', () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100
+            && offset < currentList.length) {
+          renderNext();
+        }
+      });
+    }
+
+    function setupSearch() {
+      document.getElementById('searchBtn').addEventListener('click', () => {
+        const kw = document.getElementById('searchInput').value.trim().toLowerCase();
+        currentList = allMovies.filter(m => m.title.toLowerCase().includes(kw));
+        resetAndRender();
+      });
+    }
+
+    function setupSort() {
+      document.querySelectorAll('input[name="sort"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+          const v = radio.value;
+          currentList.sort((a,b) => {
+            if (v==='vote_desc') return b.vote_average - a.vote_average;
+            if (v==='vote_asc')  return a.vote_average - b.vote_average;
+            if (v==='date_desc') return new Date(b.release_date) - new Date(a.release_date);
+            if (v==='date_asc')  return new Date(a.release_date) - new Date(b.release_date);
+          });
+          resetAndRender();
+        });
+      });
+    }
+
+    function resetAndRender() {
+      offset = 0;
+      document.getElementById('movieList').innerHTML = '';
+      renderNext();
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
