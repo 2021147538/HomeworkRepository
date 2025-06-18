@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>인프밍 영화 정보 사이트</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title"><a href="/">인프밍 영화 정보 사이트</a></h1>
+    <nav class="site-nav">
+      <a href="/">메인페이지</a>
+      <span id="authLinks">
+        <a href="login.html">로그인</a>
+        <a href="signup.html">회원가입</a>
+      </span>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <div class="search-bar">
+      <input id="searchInput" placeholder="키워드를 입력하세요" aria-label="검색창">
+      <button id="searchBtn">검색</button>
+    </div>
+
+    <aside class="sort-panel" aria-label="정렬 패널">
+      <h2>정렬 기준</h2>
+      <label><input type="radio" name="sort" value="vote_average desc"> 평점 ↓</label>
+      <label><input type="radio" name="sort" value="vote_average asc"> 평점 ↑</label>
+      <label><input type="radio" name="sort" value="release_date desc"> 개봉 ↓</label>
+      <label><input type="radio" name="sort" value="release_date asc"> 개봉 ↑</label>
+      <label><input type="radio" name="sort" value="title asc"> 제목 A-Z</label>
+      <label><input type="radio" name="sort" value="title desc"> 제목 Z-A</label>
+    </aside>
+
+    <section id="movieList" class="movie-grid" aria-live="polite"></section>
+    <button id="toTop" class="to-top" aria-label="맨 위로">↑</button>
+
+    <section class="about-section">
+      <h2>About</h2>
+      <p>로그인 후 즐겨찾기 및 댓글 기능을 사용할 수 있습니다.</p>
+    </section>
+  </main>
+
+  <script src="scripts/index.js" type="module"></script>
+</body>
+</html>

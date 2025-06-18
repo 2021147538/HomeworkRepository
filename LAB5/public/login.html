@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>로그인 - 인프밍 영화 정보 사이트</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">인프밍 영화 정보 사이트입니다.</h1>
+    <nav class="site-nav">
+      <a href="index.html">메인페이지</a>
+      <a href="login.html">로그인</a>
+      <a href="signup.html">회원가입</a>
+    </nav>
+  </header>
+
+  <main class="auth-container">
+    <form action="login_action.php" method="post">
+      <div class="form-box">
+        아이디 : <input type="text" placeholder="아이디 입력" required><br>
+        비밀번호 : <input type="password" placeholder="비밀번호 입력" required><br>
+        
+        <button type="submit" class="login-btn">Login</button>
+        <button type="reset" class="cancel-btn">Cancel</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
